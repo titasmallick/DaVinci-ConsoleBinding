@@ -1,0 +1,91 @@
+{
+  "_comment": "DaVinci Gamepad Hub config. Edit freely and relaunch — no PowerShell/C# knowledge needed. 'keys' uses space-separated tokens: modifiers (Ctrl/Shift/Alt) followed by the main key. Main key can be a letter, digit, F1-F12, Left/Right/Up/Down/Home/End/Delete/Insert/PageUp/PageDown, Space/Enter/Tab/Backspace/Esc, or a symbol , . - + / [ ]",
+
+  "settings": {
+    "pollIntervalMs": 8,
+    "statusRefreshMs": 150,
+    "disconnectedRetryMs": 250,
+    "inactiveAppSleepMs": 30,
+
+    "jogDeadzone": 7000,
+    "jogMaxIntervalMs": 260,
+    "jogMinIntervalMs": 25,
+
+    "mouseDeadzone": 6000,
+    "mouseSensitivity": 20,
+    "mouseCurveExponent": 1.6,
+
+    "triggerThreshold": 40,
+    "zoomCooldownMs": 140,
+
+    "dpadRepeatInitialMs": 160,
+    "dpadRepeatMs": 80
+  },
+
+  "bindings": {
+    "Base": {
+      "A":         { "keys": "Space",     "label": "Play / Pause" },
+      "B":         { "keys": "Ctrl B",    "label": "Blade / Split Clip at Playhead" },
+      "X":         { "keys": "I",         "label": "Mark In" },
+      "Y":         { "keys": "O",         "label": "Mark Out" },
+      "L3":        { "keys": "K",         "label": "Shuttle Stop / Pause" },
+      "Start":     { "keys": "Delete",    "label": "Ripple Delete" },
+      "DPadLeft":  { "keys": "Left",      "label": "Step Backward 1 Frame" },
+      "DPadRight": { "keys": "Right",     "label": "Step Forward 1 Frame" },
+      "DPadUp":    { "keys": "Up",        "label": "Jump Previous Cut Point" },
+      "DPadDown":  { "keys": "Down",      "label": "Jump Next Cut Point" }
+    },
+
+    "Tap": {
+      "LB":   { "keys": "J",       "label": "Shuttle Rewind" },
+      "RB":   { "keys": "L",       "label": "Shuttle Forward" },
+      "Back": { "keys": "Shift Z", "label": "Fit Timeline to Window" }
+    },
+
+    "LB": {
+      "A":         { "keys": "Shift F12", "label": "Append Clip to End of Timeline" },
+      "Y":         { "keys": "F10",       "label": "Overwrite Clip to Timeline" },
+      "X":         { "keys": "F9",        "label": "Insert Clip into Timeline" },
+      "B":         { "keys": "F11",       "label": "Replace Clip" },
+      "Start":     { "keys": "Ctrl Shift B", "label": "Blade All Tracks" },
+      "DPadLeft":  { "keys": ",",         "label": "Nudge Clip 1 Frame Left" },
+      "DPadRight": { "keys": ".",         "label": "Nudge Clip 1 Frame Right" },
+      "DPadUp":    { "keys": "Shift ,",   "label": "Nudge Clip 5 Frames Left" },
+      "DPadDown":  { "keys": "Shift .",   "label": "Nudge Clip 5 Frames Right" }
+    },
+
+    "RB": {
+      "A":         { "keys": "D",            "label": "Toggle Clip Enable/Disable" },
+      "B":         { "keys": "Ctrl T",       "label": "Add Video Transition (Cross Dissolve)" },
+      "X":         { "keys": "Ctrl Shift T", "label": "Add Audio Transition (Crossfade)" },
+      "Y":         { "keys": "N",            "label": "Toggle Snapping" },
+      "Start":     { "keys": "Ctrl Shift L", "label": "Toggle Linked Selection" },
+      "DPadUp":    { "keys": "Ctrl Shift [", "label": "Ripple Trim Start to Playhead" },
+      "DPadDown":  { "keys": "Ctrl Shift ]", "label": "Ripple Trim End to Playhead" },
+      "DPadLeft":  { "keys": "V",            "label": "Select Nearest Edit Point" },
+      "DPadRight": { "keys": "Shift V",      "label": "Select Clip under Playhead" },
+      "R3":        { "keys": "MOUSE_RIGHT_CLICK", "label": "Mouse Right-Click (Context Menu)" }
+    },
+
+    "Back": {
+      "A":         { "keys": "Q",       "label": "Toggle Source Viewer / Timeline" },
+      "B":         { "keys": "Ctrl Z",  "label": "Undo" },
+      "Y":         { "keys": "Ctrl Shift Z", "label": "Redo" },
+      "X":         { "keys": "Alt X",   "label": "Clear In & Out Points" },
+      "Start":     { "keys": "Ctrl S",  "label": "Quick Save Project" },
+      "R3":        { "keys": "Ctrl F",  "label": "Fullscreen Cinema Preview" },
+      "L3":        { "keys": "M",       "label": "Add Marker" },
+      "LB":        { "keys": "Home",    "label": "Jump to Timeline Start" },
+      "RB":        { "keys": "End",     "label": "Jump to Timeline End" },
+      "DPadLeft":  { "keys": "Shift 3", "label": "Switch to Cut Page" },
+      "DPadUp":    { "keys": "Shift 4", "label": "Switch to Edit Page" },
+      "DPadRight": { "keys": "Shift 6", "label": "Switch to Color Page" },
+      "DPadDown":  { "keys": "Shift 8", "label": "Switch to Deliver Page" }
+    },
+
+    "Trigger": {
+      "Left":  { "keys": "Ctrl -", "label": "Zoom Timeline Out" },
+      "Right": { "keys": "Ctrl +", "label": "Zoom Timeline In" }
+    }
+  }
+}
