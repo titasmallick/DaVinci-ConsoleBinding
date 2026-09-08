@@ -1,6 +1,6 @@
 <#
 ================================================================================
-DaVinci Resolve Gamepad Hub — 100% Assembly Pro Edition
+DaVinci Resolve Gamepad Hub - 100% Assembly Pro Edition
 Enables 100% of editing assembly from the gamepad:
 - Source & Timeline toggle, In/Out marking, Append, Insert, Overwrite, Replace
 - Analog Jog Wheel, Single-frame step, Jump cut points, Shuttle J/K/L

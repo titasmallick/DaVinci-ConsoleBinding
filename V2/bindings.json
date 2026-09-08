@@ -1,5 +1,5 @@
 {
-  "_comment": "DaVinci Gamepad Hub config. Edit freely and relaunch — no PowerShell/C# knowledge needed. 'keys' uses space-separated tokens: modifiers (Ctrl/Shift/Alt) followed by the main key. Main key can be a letter, digit, F1-F12, Left/Right/Up/Down/Home/End/Delete/Insert/PageUp/PageDown, Space/Enter/Tab/Backspace/Esc, or a symbol , . - + / [ ]",
+  "_comment": "DaVinci Gamepad Hub config. Edit freely and relaunch - no PowerShell/C# knowledge needed. 'keys' uses space-separated tokens: modifiers (Ctrl/Shift/Alt) followed by the main key. Main key can be a letter, digit, F1-F12, Left/Right/Up/Down/Home/End/Delete/Insert/PageUp/PageDown, Space/Enter/Tab/Backspace/Esc, or a symbol , . - + / [ ]",
 
   "settings": {
     "pollIntervalMs": 8,

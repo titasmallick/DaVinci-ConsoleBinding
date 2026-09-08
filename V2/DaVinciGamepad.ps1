@@ -1,8 +1,8 @@
 <#
 ================================================================================
-DaVinci Resolve Gamepad Hub — Config-Driven Edition
+DaVinci Resolve Gamepad Hub - Config-Driven Edition
 All button mappings and tuning values now live in bindings.json (same folder).
-Edit that file to remap anything — no PowerShell/C# editing or recompiling.
+Edit that file to remap anything - no PowerShell/C# editing or recompiling.
 ================================================================================
 #>
 
@@ -95,20 +95,20 @@ $DefaultConfigJson = @'
 '@
 
 if (-not (Test-Path $ConfigPath)) {
-    Write-Host "No bindings.json found — writing default config to $ConfigPath" -ForegroundColor Yellow
+    Write-Host "No bindings.json found - writing default config to $ConfigPath" -ForegroundColor Yellow
     Set-Content -Path $ConfigPath -Value $DefaultConfigJson -Encoding UTF8
 }
 
 try {
-    $Config = Get-Content -Path $ConfigPath -Raw | ConvertFrom-Json
+    $Config = Get-Content -Path $ConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json
 } catch {
-    Write-Host "bindings.json failed to parse ($($_.Exception.Message)) — falling back to built-in defaults." -ForegroundColor Red
+    Write-Host "bindings.json failed to parse ($($_.Exception.Message)) - falling back to built-in defaults." -ForegroundColor Red
     $Config = $DefaultConfigJson | ConvertFrom-Json
 }
 
 # ------------------------------------------------------------------------------
 # The engine itself. Mapping tables and analog tuning are populated after
-# Add-Type from the parsed JSON above — no bindings are hardcoded here anymore.
+# Add-Type from the parsed JSON above - no bindings are hardcoded here anymore.
 # ------------------------------------------------------------------------------
 $source = @"
 using System;
@@ -642,7 +642,7 @@ Write-Host "     DaVinci Resolve - Gamepad Hub Active (config-driven)           
 Write-Host "=========================================================================" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "Loaded bindings from: $ConfigPath" -ForegroundColor DarkGray
-Write-Host "Edit that file and relaunch to remap any button — no code changes needed." -ForegroundColor DarkGray
+Write-Host "Edit that file and relaunch to remap any button - no code changes needed." -ForegroundColor DarkGray
 Write-Host ""
 Write-Host " 1. BASE LAYER (Normal Press):" -ForegroundColor Green
 Write-Host ("   * [Left Stick]  : Pro Jog Wheel        | [A] {0,-30}" -f [DaVinciAssemblyEngine]::Labels["Base.A"])
